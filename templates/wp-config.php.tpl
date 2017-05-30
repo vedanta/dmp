@@ -18,18 +18,19 @@
  * @package WordPress
  */
 
+
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', '{{ salt['pillar.get']('sampleapp:database') }}');
+define('DB_NAME', '{{ salt['pillar.get']('mysql:database') }}');
 
 /** MySQL database username */
-define('DB_USER', '{{ salt['pillar.get']('sampleapp:username') }}');
+define('DB_USER', '{{ salt['pillar.get']('mysql:username') }}');
 
 /** MySQL database password */
-define('DB_PASSWORD', '{{ salt['pillar.get']('sampleapp:password') }}');
+define('DB_PASSWORD', '{{ salt['pillar.get']('mysql:password')}}');
 
 /** MySQL hostname */
-define('DB_HOST', '{{ salt['pillar.get']('sampleapp:host') }}');
+define('DB_HOST', '{{ salt['pillar.get']('mysql:host')}}');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
