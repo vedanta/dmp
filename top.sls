@@ -9,4 +9,6 @@ base:
         - 5-webstack-conf
         - 6-application-source-download
         - 7-application-conf
+        - 8-dbstack-service-init
+        - 9-webstack-service-init
 
