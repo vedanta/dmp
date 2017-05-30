@@ -7,4 +7,6 @@ base:
         - 3-webstack
         - 4-dbstack-conf
         - 5-webstack-conf
+        - 6-application-source-download
+        - 7-application-conf
 
