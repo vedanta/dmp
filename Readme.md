@@ -34,7 +34,5 @@ Build Containers:
 # docker build -t vedanta/dmp-webstack:latest -f dmp-webstack.dockerfile .   
 # docker build -t vedanta/dmp-dbstack:latest -f dmp-dbstack.dockerfile .   
 ```
-Run Container:
-```
 
 
