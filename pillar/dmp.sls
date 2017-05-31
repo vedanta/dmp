@@ -10,6 +10,7 @@ mysql:
     - password: wordpress_user
     - root_pw: root_password
     - host: localhost
+    # - host: 192.168.86.184
 docker:
     - reponame: hpetest
     - tag: latest

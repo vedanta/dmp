@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+    dbstack:
+        image: vedanta/dmp-dbstack:latest
+        container_name: dmp-dbstack-1
+        ports:
+            - "3306:3306"
+        volumes:
+            - /data/db:/var/lib/mysql:rw
+            - /data/cache:/var/cache:rw
+            - /data/log:/var/log/mysql:rw
+        tmpfs:
+            - /run
+            - /tmp
+    webstack:
+        image: vedanta/dmp-webstack:latest
+        container_name: dmp-webstack-1
+        ports:
+            - "80:80"
+        depends_on:
+            - dbstack
