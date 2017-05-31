@@ -21,7 +21,7 @@ RUN salt-call -l info --file-root=/srv/salt --pillar-root=/srv/salt/pillar --con
 # RUN salt-call -l info --file-root=/srv/salt --pillar-root=/srv/salt/pillar --config-dir=/srv/salt/conf --local state.apply 9-webstack-service-init
 #
 ##
-COPY ./docker/dmp-single-entrypoint.sh ./dmp-single-entrypoint.sh
+COPY ./dmp-single-entrypoint.sh ./dmp-single-entrypoint.sh
 EXPOSE 80
 ENTRYPOINT ["./dmp-single-entrypoint.sh"]
 
