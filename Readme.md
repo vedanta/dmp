@@ -14,10 +14,10 @@ Run state:
 # sudo salt-call -l quiet --file-root=/srv/salt --pillar-root=/srv/salt/pillar --config-dir=/srv/salt/conf --local state.apply   
 ```   
 
-### Docker Container   
+### Docker Container (single)   
 Build Container: (Run from top level source directory)   
 ```
-# docker build -t vedanta/dmp-single:latest -f docker/dmp-single.dockerfile .
+# docker build -t vedanta/dmp-single:latest -f dmp-single.dockerfile .
 ```   
 Run Container: 
 ```   
@@ -26,5 +26,15 @@ Run Container:
 Run Container in Backgroud:   
 ```
 # docker run --name dmp-sample_2 -p 80:80 -itd vedanta/dmp-single:latest   
+```    
+
+### Docker Container (multiple)
+Build Containers: 
 ```   
+# docker build -t vedanta/dmp-webstack:latest -f dmp-webstack.dockerfile .   
+# docker build -t vedanta/dmp-dbstack:latest -f dmp-dbstack.dockerfile .   
+```
+Run Container:
+```
+
 
