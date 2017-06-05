@@ -28,12 +28,6 @@ Run Container in Backgroud:
 # docker run --name dmp-sample_2 -p 80:80 -itd vedanta/dmp-single:latest   
 ```    
 
-### Docker Container (multiple)
-Build Containers: 
-```   
-# docker build -t vedanta/dmp-webstack:latest -f dmp-webstack.dockerfile .   
-# docker build -t vedanta/dmp-dbstack:latest -f dmp-dbstack.dockerfile .   
-```
 ### Start up Containers with a Routing Proxy   
 ```
 # sudo salt-call -l debug --file-root=$HOME/srv/salt --pillar-root=$HOME/srv/salt/pillar --config-dir=$HOME/srv/salt/conf --local state.apply docker-deploy-withproxy
