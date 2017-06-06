@@ -13,7 +13,7 @@ Step 2 - Download the source from the git repository, Install on bare metal syst
 ```   	
 	# git clone https://github.com/vedanta/dmp.git   
 	# cd dmp   
-	# ./install_minion   
+	# ./install_minion.sh   
 	# sudo salt-call -l info --file-root=/home/hpedemo/dmp --pillar-root=/home/hpedemo/dmp/pillar --config-dir=/home/hpedemo/dmp/conf --local state.apply   
 	> in your browser go to http://ipaddress/wordpress/   
 ```   
