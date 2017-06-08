@@ -1,0 +1,14 @@
+Name       PowerState    PublicIps       Location
+--------  -------------------------  ------------  --------------  ----------
+hpelab1     VM running    52.165.134.82   centralus
+hpelab2     VM running    52.173.140.223  centralus
+hpelab3     VM running    52.173.241.67   centralus
+hpelab4     VM running    52.173.143.2    centralus
+hpelab5     VM running    52.173.138.80   centralus
+hpelab6     VM running    52.165.135.179  centralus
+hpelab7     VM running    52.165.130.244  centralus
+hpelab8     VM running    52.173.241.45   centralus
+hpelab9     VM running    52.173.140.143  centralus
+hpelab10    VM running    52.168.3.227    eastus
+hpelab11    VM running    52.168.137.219  eastus
+hpelab12    VM running    40.71.91.130    eastus
