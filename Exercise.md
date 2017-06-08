@@ -1,3 +1,20 @@
+
+System cleanup:   
+Execute these step to ensure clean system:
+```   
+    # sudo /etc/init.d/nginx stop   
+    # sudo /etc/init.d/php7.0-fpm stop   
+    # sudo /etc/init.d/mysql stop   
+    # sudo docker stop $(sudo docker ps -aq)
+    # sudo docker rm $(sudo docker ps -aq)
+    # sudo docker rmi $(sudo  docker images -aq)
+    # sudo docker images -a
+
+```    
+
+
+
+
 Step 1 - Log into the provided system   
 	1.1 - Obtain login information from HPE staff   
 	1.2 - Login into the system   
